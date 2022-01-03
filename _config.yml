@@ -39,8 +39,8 @@ navigation_links:
   - title: Search
     url: /BlogTestForeverJekyll/search
     
-   - title: Categories
-    url: /BlogTestForeverJekyll/categories
+ #  - title: Categories
+ #   url: /BlogTestForeverJekyll/categories
 
 # Footer icons
 footer_links:
