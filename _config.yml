@@ -30,8 +30,8 @@ baseurl: "/BlogTestForeverJekyll"
 
 # Navigation menu
 navigation_links:
-  - title: Blog
-    url: /
+#  - title: Blog
+#    url: /
 
   - title: About
     url: /BlogTestForeverJekyll/about
