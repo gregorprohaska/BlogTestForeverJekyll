@@ -31,13 +31,16 @@ baseurl: "/BlogTestForeverJekyll"
 # Navigation menu
 navigation_links:
   - title: Blog
-    url: /
+    url: /BlogTestForeverJekyll/
 
   - title: About
-    url: /about
+    url: /BlogTestForeverJekyll/about
 
   - title: Search
     url: /BlogTestForeverJekyll/search
+    
+   - title: Categories
+    url: /BlogTestForeverJekyll/categories
 
 # Footer icons
 footer_links:
