@@ -37,7 +37,7 @@ navigation_links:
     url: /about
 
   - title: Search
-    url: /search
+    url: /BlogTestForeverJekyll/search
 
 # Footer icons
 footer_links:
