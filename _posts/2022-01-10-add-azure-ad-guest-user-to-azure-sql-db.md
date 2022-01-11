@@ -14,7 +14,19 @@ Before you can add an Azure AD user Azure AD authentication has to be enabled on
 
 To enable AAD-Auth you have to add\define an Azure Active Directory admin for this server. This user can be any AAD user. There are different approaches to do this, but (imho) the easiest way is to do this via [azure portal](https://portal.azure.com/).
 
-Navigate to your SQL server, select Azure Active Directory (in section Settings) and add an admin via "Set admin"![addAdmin] (/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-db/AAD-Admin3.jpg "Set Azure Active Directory Admin")
+Navigate to your SQL server, select Azure Active Directory (in section Settings) and add an admin via "Set admin"
+
+![addAdmin1](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)
+
+[![addAdmin2](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg){:.glightbox}
+
+[![addAdmin3](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg){:.glightbox}
+
+[![addAdmin4](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-db/AAD-Admin3.jpg){:.glightbox}
+
+![addAdmin5](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg "Set Azure AD Admin")
+
+
 
 Check "Support only Azure Active Directory authentication for this server" if you would like to restrict access to AAD-Users only(similar to "Windows Authentication mode" in an on-prem setup).
 
@@ -32,7 +44,7 @@ As soon as this is done the user should be able to connect to the database. **BU
 
 ## Issues
 - Check if your current installation of SQL Server Management Studio is support. Beginning with December 2021 you have to use SSMS 18.6 or later to use Azure Active Directory authentication with MFA (see [MS-Docs](https://docs.microsoft.com/en-us/azure/azure-sql/database/authentication-mfa-ssms-overview)).
-- You can use Azure Data Studio as well (wich I haven't found documented)
+- You can use Azure Data Studio as well (which I haven't found documented)
 - To enforce MFA you have to setup [Conditional Access](https://docs.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure)
 
 
