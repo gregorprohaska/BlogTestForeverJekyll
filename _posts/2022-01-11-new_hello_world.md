@@ -29,3 +29,16 @@ Check "Support only Azure Active Directory authentication for this server" if yo
 To be honest: it really doesn't matter if you would like to add a guest user or an user of your tenant.
 
 Just connect to your Azure SQL DB with your Azure AD admin and create the user via t-sql.
+
+```sql
+CREATE USER [yourguestuser@guestdomain] FROM EXTERNAL PROVIDER
+```
+
+"FROM EXTERNAL PROVIDER" indicates that this is an Azure AD user.
+As soon as this is done the user should be able to connect to the database. **BUT** this user does not have any access rights to this database. You could add this user to a role (e.g. db_datareader, db_owner,...) or explicitly grant access to specific objects.
+
+## Issues
+- Check if your current installation of SQL Server Management Studio is support. Beginning with December 2021 you have to use SSMS 18.6 or later to use Azure Active Directory authentication with MFA (see [MS-Docs](https://docs.microsoft.com/en-us/azure/azure-sql/database/authentication-mfa-ssms-overview)).
+- You can use Azure Data Studio as well (which I haven't found documented)
+- To enforce MFA you have to setup [Conditional Access](https://docs.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure)
+
