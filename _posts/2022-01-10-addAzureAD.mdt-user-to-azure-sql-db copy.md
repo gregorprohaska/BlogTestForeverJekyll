@@ -1,7 +1,7 @@
 ---
 layout: post
 title: new Adding an Azure AD (Guest) user to your Azure SQL DB
-categories: [Azure, Azure SQL DB, SQL, Azure AD]
+categories: [Azure, SQL]
 ---
 
 Hello and welcome. The only purpose of this post is to greet you when your site comes alive for the first time.  
