@@ -4,9 +4,7 @@ title: Adding an Azure AD (Guest) user to your Azure SQL DB
 categories: [Azure, Azure SQL DB, SQL, Azure AD]
 ---
 
-This will be a short write up on how to add an Azure AD user to an Azure SQL DB. 
-
-In one of my last projects we had to add Azure AD Guest Users to an Azure SQL DB which was hosted in our tenant. Luckily creation of guest users within our tenant was already enabled, Azure Subscription was associated to an Azure Active Directory and therefore we could concentrate on adding such users to our Azure SQL DB (as will this post ;-)).
+In one of my last projects we had to add Azure AD Guest Users to an Azure SQL DB which was hosted in our tenant. Luckily creation of guest users within our tenant was already enabled, Azure Subscription was associated to an Azure Active Directory and therefore we could concentrate on adding such users to our Azure SQL DB (as will this post).
 
 ## Enabling Azure AD authentication
 Before you can add an Azure AD user Azure AD authentication has to be enabled on this instance\server of Azure SQL DB. 
@@ -16,17 +14,11 @@ To enable AAD-Auth you have to add\define an Azure Active Directory admin for th
 
 Navigate to your SQL server, select Azure Active Directory (in section Settings) and add an admin via "Set admin"
 
-![addAdmin1](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)
-
-[![addAdmin2](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg){:.glightbox}
-
 [![addAdmin3](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg){:.glightbox}
 
-[![addAdmin4](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-db/AAD-Admin3.jpg){:.glightbox}
+![addAdmin4](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg)
 
-![addAdmin5](/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg "Set Azure AD Admin")
-
-
+![addAdmin4](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg "set Azure AD admin")
 
 Check "Support only Azure Active Directory authentication for this server" if you would like to restrict access to AAD-Users only(similar to "Windows Authentication mode" in an on-prem setup).
 
