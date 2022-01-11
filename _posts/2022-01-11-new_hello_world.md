@@ -22,3 +22,10 @@ To enable AAD-Auth you have to add\define an Azure Active Directory admin for th
 Navigate to your SQL server, select Azure Active Directory (in section Settings) and add an admin via "Set admin"
 
 [![addAdmin](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg "set Azure AD admin")](https://gregorprohaska.github.io/BlogTestForeverJekyll/assets/image/blogpictures/2021-01-10-aad-azure-ad-guest-user-to-azure-sql-db/AAD-Admin3.jpg){:.glightbox}
+
+Check "Support only Azure Active Directory authentication for this server" if you would like to restrict access to AAD-Users only(similar to "Windows Authentication mode" in an on-prem setup).
+
+## Adding Azure AD (guest) user
+To be honest: it really doesn't matter if you would like to add a guest user or an user of your tenant.
+
+Just connect to your Azure SQL DB with your Azure AD admin and create the user via t-sql.
