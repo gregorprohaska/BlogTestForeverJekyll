@@ -4,28 +4,19 @@ title: About
 permalink: /about
 ---
 
-## the blog
+## short story:
+I am genuinely curious :-)
 
-This blog is dedicated to all things related with Data & Analytics, especially ETL, SQL, Power BI modelling and DAX. Most of the content is based on real-world examples or (at leaste) inspired by. 
+## long version:
+I started my journey in Data & Analytics in 2007 as a consultant for financial planning. One of my first tasks was to create a generic import framework to simplify the data load into our tool! This was the first time I really thought about a data model. Why is it designed as it is, what tried the inventor to achieve, which objects are related (even if there isn't any foreign key defined) and how could we leverage that structure\design to achieve our own goal? I'm deeply grateful to my managers who gave me the space to learn, practice, make mistakes and finally succeed (sometimes ;-) ).
 
-... and of course it should be a place where I can store and collect all the little helpers I use all the time. :-)
+Fast-forward... today I'm still a consultant and work with some of the same colleagues, but my focus shifted. From financial planning to SSAS Multidimensional to SSAS Tabular and Power BI, all based on "good ol' DWH" architecture principles and solid ETL\ELT-Processes. From Junior Consultant to team leader.
 
-## me
+One of the greatest pleasures in my job is that I learn something new every day. I would be happy if this blog helps others to learn too.
+It is dedicated to all things related to Data & Analytics, especially ETL, SQL, modelling, Power BI, SSAS and DAX.
 
-### short:
-
-what describes me best: ...
-
- **I am genuinely curios :-)**
-
-### a little bit longer:
-
-I startet my journey in Data & Analytics in 2007 as a consultant for financial planning. One of my first tasks was to create a generic import framework to simplify the data load into our tool - I loved it! The moment when the pieces fall into place gave (and still do give) me real joy. I'm deeply gratefull to my then-bosses which gave me the space to learn, practice, make mistakes and finally succeed (sometimes ;-)).
-
-Fast-forward... today I'm still a consultant and work with some of the same colleagues, but my focus shifted. From financial planning to SSAS Multidimensional to SSAS Tabular and Power BI, all based on "good ol' DWH" architecture principles and solid ETL\ELT-Processes. Furthermore, since 2019 I do have the pleasure to lead a team of business intelligence\Data&Analytics-Experts as part of a consulting company with 1300+ employees. 
+... and of course, it should be a place where I can store all the little helpers I use all the time. :-)
 
 ## Last but not Least
 
-all that is written in this blog represents my opinion only and it does not neccessarily reflect with any affiliated organization.
-
-
+All that is written in this blog represents my opinion only and it does not necessarily reflect with any affiliated organization.
