@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Where do I find old versions of Visual Studio Community
+title: Install Analysis Services Extension for Visual Studio Community
 categories: [SQL, SSAS, SSIS, SSRS]
 ---
 
